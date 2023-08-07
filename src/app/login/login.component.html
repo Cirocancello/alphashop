@@ -1,0 +1,17 @@
+<div>
+    <label for="userId">User Id:</label>
+    <input type="text" id="username" placeholder="Nome Utente" [(ngModel)]=userId>
+
+    <label for="password">Password</label>
+    <input type="text" id="password" placeholder="Password" [(ngModel)]=password>
+
+    <button (click)=getsAuth()>Connetti</button>
+</div>
+
+<div *ngIf="!autenticato">
+    {{errMsg}}
+</div>
+
+<div *ngIf="consentito">
+    {{okMsg}}
+</div>

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'alphashop';
+
+  saluti: string = "Benvenuti in Alpha shop";
+
+  bollini: number = 1500;
 }
