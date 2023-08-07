@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit{
 
    getsAuth = (): void => {
     if(this.userId === "Ciro" && this.password === "123"){
-      this.route.navigate(['welcome'])
+      this.route.navigate(['welcome', this.userId])
       this.autenticato = true;
      
     }
