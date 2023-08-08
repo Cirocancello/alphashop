@@ -1,12 +1,14 @@
 img {
-    display: inline-block;
+  display: inline-block;
 }
 
 .dduser {
-    margin-right: 55px;
-    margin-left: 20px;
+  margin-right: 50px;
+  margin-left: 20px;
 }
 
+/*
 nav {
-    margin-bottom: 0.8%;
+  margin-bottom: 0.8%;
 }
+*/
