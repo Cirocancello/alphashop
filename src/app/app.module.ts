@@ -10,6 +10,7 @@ import { LogoutComponent } from './pages/logout/logout.component';
 import { NgModule } from '@angular/core';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { GridArticoliComponent } from './pages/grid-articoli/grid-articoli.component';
+import { ArticoliCardComponent } from './components/articoli-card/articoli-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GridArticoliComponent } from './pages/grid-articoli/grid-articoli.compo
     ErrorComponent,
     ArticoliComponent,
     LogoutComponent,
-    GridArticoliComponent
+    GridArticoliComponent,
+    ArticoliCardComponent
   ],
   imports: [
     BrowserModule,
