@@ -14,7 +14,7 @@ export class RouteGuardService implements CanActivate {
   canActivate(route: ActivatedRouteSnapshot, state:  RouterStateSnapshot)  {
 
     if (!this.BasicAuth.isLogged()) {
-      this.route.navigate(['login']);
+      this.route.navigate(['login'], { queryParams: {nologged: true}});
       return false;
     } else {
       return true;

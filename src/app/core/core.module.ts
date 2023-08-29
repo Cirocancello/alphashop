@@ -4,12 +4,14 @@ import { HeaderComponent } from './header/header.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    NotificationsComponent
   ],
   imports: [
     CommonModule,

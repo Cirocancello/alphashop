@@ -13,15 +13,20 @@ export class ArticoliCardComponent implements OnInit {
 
   @Input()
   articolo: IArticoli  = {
-    codart: '',
+    codArt: '',
     descrizione: '',
     um: '',
-    pzcart: 0,
-    peso: 0,
+    codStat: '',
+    pzCart: 0,
+    pesoNetto: 0,
     prezzo: 0,
-    active: true,
-    data: new Date(),
-    imageUrl: ''
+    idStatoArt: '1',
+    desStatoArt: '',
+    dataCreazione: new Date(),
+    imageUrl: '',
+    iva: {idIva: 0, descrizione: '', aliquota: 0 },
+    famAssort: {id : -1, descrizione: ''},
+    barcode: []
   };
 
   @Output()
@@ -32,7 +37,7 @@ export class ArticoliCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  editArt = () =>  this.edit.emit(this.articolo.codart);
-  delArt = () => this.delete.emit(this.articolo.codart);
+  editArt = () => this.edit.emit(this.articolo.codArt);
+  delArt = () => this.delete.emit(this.articolo.codArt);
 
 }
