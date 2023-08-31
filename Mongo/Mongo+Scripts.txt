@@ -1,0 +1,23 @@
+db.createUser({ 
+    user:"admin", 
+    pwd:"admin", 
+    roles:[
+        { role: "userAdminAnyDatabase", db: "admin"  }
+    ] 
+})
+
+mongo -u admin --authenticationDatabase admin -p
+
+db.createUser({ 
+    user:"ciro", 
+    pwd:"123admin",
+    roles:[{ role: "readWrite", db: "ms-users"  }]  
+})
+
+mongo -u ciro --authenticationDatabase admin -p
+
+db.createUser({ 
+    user:"nadia", 
+    pwd:"123admin",
+    roles:[{ role: "readWrite", db: "ms-users"  }]  
+})
